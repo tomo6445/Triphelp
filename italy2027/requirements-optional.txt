@@ -1,0 +1,8 @@
+# Italy 2027 runs with zero dependencies (Python 3.9+ standard library only).
+# Install any of these to unlock automatic data collection - see README.md.
+
+# Free, no account: automatic cash-fare polling from Google Flights.
+fast-flights
+
+# Amadeus and seats.aero need no extra package - they're called directly over
+# HTTPS with urllib once you paste an API key into Settings.

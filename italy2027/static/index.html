@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Italy 2027 - Mission Control</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header id="app-header">
+  <div class="brand"><span class="plane">&#9992;</span> Italy 2027</div>
+  <div class="header-stats" id="header-stats">
+    <div class="stat"><span>Route</span><b id="hs-route">-</b></div>
+    <div class="stat"><span>Days to departure</span><b id="hs-days">-</b></div>
+    <div class="stat"><span>Next release</span><b id="hs-release">-</b></div>
+    <div class="stat"><span>Last check</span><b id="hs-lastcheck">never</b></div>
+  </div>
+  <button class="primary" id="run-checks-btn">Run checks now</button>
+</header>
+
+<nav id="tabs">
+  <a href="#dashboard" data-tab="dashboard">Dashboard</a>
+  <a href="#plan" data-tab="plan">Plan <span class="badge" id="badge-plan" hidden></span></a>
+  <a href="#options" data-tab="options">Options</a>
+  <a href="#fares" data-tab="fares">Cash fares</a>
+  <a href="#awards" data-tab="awards">Award seats</a>
+  <a href="#points" data-tab="points">Points &amp; cards</a>
+  <a href="#alerts" data-tab="alerts">Alerts <span class="badge" id="badge-alerts" hidden></span></a>
+  <a href="#links" data-tab="links">Search links</a>
+  <a href="#settings" data-tab="settings">Settings</a>
+</nav>
+
+<main>
+  <section class="tab" id="tab-dashboard"></section>
+  <section class="tab" id="tab-plan"></section>
+  <section class="tab" id="tab-options"></section>
+  <section class="tab" id="tab-fares"></section>
+  <section class="tab" id="tab-awards"></section>
+  <section class="tab" id="tab-points"></section>
+  <section class="tab" id="tab-alerts"></section>
+  <section class="tab" id="tab-links"></section>
+  <section class="tab" id="tab-settings"></section>
+</main>
+
+<div id="toast"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>
