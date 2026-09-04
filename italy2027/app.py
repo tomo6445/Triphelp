@@ -848,6 +848,8 @@ class Handler(BaseHTTPRequestHandler):
         u = urllib.parse.urlparse(self.path)
         p, q = u.path, urllib.parse.parse_qs(u.query)
         try:
+            if p == "/favicon.ico":
+                return self._send(200, b"", "image/x-icon")
             if p == "/api/dashboard":
                 return self._send(200, dashboard())
             if p == "/api/settings":
